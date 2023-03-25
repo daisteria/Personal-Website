@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* Stylesheet for ResumeWebsite */
+
+h1, h2, h3, h4, h5, h6, p, li {
+    font-family: consolas, 'Courier New', monospace;
+}
+
+h1 {
+    color: #222222;
+}
