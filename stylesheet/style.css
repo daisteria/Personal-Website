@@ -29,6 +29,12 @@ video {
     left: 0;
 }
 
+/************************************************
+
+    Presets for global navigation bar
+
+************************************************/
+
 header {
     border: 1px solid red;
     display: flex;
@@ -86,6 +92,41 @@ header a .logo img {
 .utility ul li a:hover {
     font-weight: bolder;
 }
+
+.utility ul li.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    z-index: 1;
+}
+
+.utility ul li.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.utility ul li.dropdown:hover .dropdown-menu li:hover {
+    font-weight: bolder;
+}
+
+.dropdown-menu li {
+    padding: 5px 0;
+}
+
+.dropdown-menu li:hover {
+    font-weight: bolder;
+}
+
+/************************************************
+
+    Presets for home.html content
+
+************************************************/
 
 main {
     border: 2px dotted wheat;
@@ -148,3 +189,9 @@ main {
     50% {border-color: #eeeeee}
     100% {border-color: transparent}
 }
+
+/************************************************
+
+    Presets for global navigation bar
+
+************************************************/
