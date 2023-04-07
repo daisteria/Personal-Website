@@ -1,12 +1,12 @@
-@charset "utf-8";
-
-/* Stylesheet for ResumeWebsite */
+/* Stylesheet for Site */
 
 html {
-    background-color: #111111;
+    background-image: url("../images/night_sky.jpg"); /* failsafe if background vid doesn't work*/
+    height: 720px;
 }
 
-h1, h2, h3, h4, h5, h6, p, li, a, #title-text, .prompt {
+/* font presents for all built-in text */
+h1, h2, h3, h4, h5, h6, p, li, a, #title-text {
     font-family: consolas, 'Courier New', monospace;
     color: #eeeeee;
 }
@@ -15,65 +15,102 @@ h1 {
     font-size: 40px;
 }
 
+a {
+    font-size: 20px;
+}
+
+/* video background */
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 header {
-    padding: 20px;
-    font-weight: bolder;
+    border: 1px solid red;
+    display: flex;
+    width: full;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 90px;
 }
 
-nav {
-    display: inline;
+header a, .utility {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 18px;
 }
 
-nav #logo {
-    float: left;
+.logo {
+    border: 1px solid green;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a .logo img {
+    width: 40px;
+}
+
+.logo h1 {
+    font-size: 26px;
     text-transform: uppercase;
+}
+
+.utility {
+    border: 1px solid blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.utility ul li {
+    display: inline-flex;
+}
+
+.utility ul li a {
     text-decoration-line: none;
-    margin: 10px 30px;
-}
-
-nav .utility ul li {
-    display: inline;
-    margin: 10px 30px;
-    float: right;
-}
-
-nav .utility ul li a {
     text-transform: uppercase;
-    text-decoration-line: none;
 }
 
-nav ul li a:hover {
+.utility ul li a:hover {
     font-weight: bolder;
 }
 
 main {
-    width: 1280px;
-    height: 640px;
+    border: 2px dotted wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: full;
+}
+
+.left-column, .right-column {
+    display: inline-block;
+    width: 35%;
+    height: 630px;
 }
 
 .left-column {
-    display: inline-block;
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.right-column {
-    display: inline-block;
-}
-
-.content {
-    float: left;
-    display: grid;
-    white-space: nowrap;
-    place-items: left;
-    width: 525px; /* change to fit title size */
-    padding: 250px 0;
-}
-
-  .content p {
-    padding: 10px 0 20px 54px;
-    font-size: 22px;
-  }
-
-  .title-text {
+.title {
     font-size: 48px;
     overflow: hidden;
     white-space: nowrap;
@@ -82,51 +119,32 @@ main {
     animation: typing 1.75s steps(20, end) forwards, /*change (17,end) to strlen*/
                blinking 1s infinite;
     animation-delay: 0.5s;
-  }
+}
 
-  .portfolio-prompt a {
-    font-weight: bold;
-    text-decoration-line: none;
-  }
+.content p {
+    font-size: 20px;
+    margin: 26px 0 52px 52px;
+}
 
-  @keyframes typing {
+.right-column {
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-column img {
+    width: 90%;
+}
+
+@keyframes typing {
     from { width: 0 }
     to { width: 100% }
-  }
-  
-  @keyframes blinking {
+}
+
+@keyframes blinking {
     0% {border-color: transparent}
     50% {border-color: #eeeeee}
     100% {border-color: transparent}
-  }
-
-.pics-content{
-    float: right;
-    width: 525px;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-    overflow: hidden;
 }
-
-.slideshow{
-    width: 100%;
-    display: flex;
-    animation: slide 16s infinite;
-}
-
-img{
-    width: 100%;
-}
-
-@keyframes slide{
-    0% {transform: translateX(0);}
-    25% {transform: translateX(0);}
-    30% {transform: translateX(-100%);}
-    50% {transform: translateX(-100%);}
-    55% {transform: translateX(-200%);}
-    75% {transform: translateX(-200%);}
-    80% {transform: translateX(-300%);}
-    100% {transform: translateX(-300%);}
-}
-
