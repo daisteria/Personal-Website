@@ -262,6 +262,14 @@ main {
 
 ************************************************/
 
-table {
+.left-column img {
+    width: 70%;
+}
 
+.right-column h1 {
+    float: left;
+}
+
+.social-links a img {
+    width: 20%;
 }
