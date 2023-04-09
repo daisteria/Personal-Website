@@ -6,7 +6,7 @@ html {
 }
 
 /* font presents for all built-in text */
-h1, h2, h3, h4, h5, h6, p, li, a, #title-text {
+h1, h2, h3, h4, h5, h6, p, li, a, #title, th, td {
     font-family: consolas, 'Courier New', monospace;
     color: #eeeeee;
 }
@@ -15,8 +15,16 @@ h1 {
     font-size: 40px;
 }
 
+h2 {
+    font-size: 32px;
+}
+
 a {
     font-size: 20px;
+}
+
+p {
+    font-size: 16px;
 }
 
 /* video background */
@@ -65,7 +73,7 @@ header a {
 }
 
 header a .logo img {
-    width: 40px;
+    width: 72px;
 }
 
 .logo h1 {
@@ -153,6 +161,7 @@ main {
 
 .title {
     font-size: 48px;
+    padding-top: 10%;
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid;
@@ -167,6 +176,14 @@ main {
     margin: 26px 0 52px 52px;
 }
 
+.left-column a {
+    border: 1px solid #eee;
+    padding: 10px;
+    margin-right: 15%;
+    max-width: fit-content;
+    text-decoration-line: none;
+}
+
 .right-column {
     border: 1px solid blue;
     display: flex;
@@ -176,7 +193,7 @@ main {
 }
 
 .right-column img {
-    width: 90%;
+    width: 80%;
 }
 
 @keyframes typing {
@@ -192,6 +209,59 @@ main {
 
 /************************************************
 
-    Presets for global navigation bar
+    Presets for projectWebsite.html
 
 ************************************************/
+
+/* main */
+.process {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: full;
+}
+
+.design-section {
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.design-section h1 {
+    text-transform: uppercase;
+}
+
+.design-section h2 {
+    font-size: 32px;
+}
+
+.design-text {
+    border: 1px solid ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    max-width: 900px;
+    margin: 40px 0;
+}
+
+.design-text a {
+    font-size: 16px;
+}
+
+
+/************************************************
+
+    Presets for contactInfo.html
+
+************************************************/
+
+table {
+
+}
