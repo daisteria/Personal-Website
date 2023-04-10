@@ -1,7 +1,7 @@
 /* Stylesheet for Site */
 
 html {
-    background-image: url("../images/night_sky.jpg"); /* failsafe if background vid doesn't work*/
+    background-image: url("../images/night_sky_long_page.png"); /* failsafe if background vid doesn't work*/
 }
 
 /* font presents for all built-in text */
@@ -47,7 +47,6 @@ video {
 ************************************************/
 
 header {
-    border: 1px solid red;
     display: flex;
     width: full;
     justify-content: space-between;
@@ -64,7 +63,6 @@ header a, .utility {
 }
 
 .logo {
-    border: 1px solid green;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -85,7 +83,6 @@ header a .logo img {
 }
 
 .utility {
-    border: 1px solid blueviolet;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,7 +137,6 @@ header a .logo img {
 ************************************************/
 
 main {
-    border: 2px dotted wheat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,7 +151,6 @@ main {
 }
 
 .left-column {
-    border: 1px solid yellow;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,7 +182,6 @@ main {
 }
 
 .right-column {
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,7 +214,6 @@ main {
 ************************************************/
 
 .portfolio-title {
-    border: 1px solid goldenrod;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -277,21 +270,18 @@ main {
 }
 
 .title-img-links {
-    border: 1px dotted red;
     position: relative;
     display: inline-flex;
     justify-content: space-between;
 }
 
 .pcard-title {
-    border: 1px dotted darkcyan;
     width: 300%;
     display: flex;
     align-items: center;
 }
 
 .pcard-image a img {
-    border: 1px dotted pink;
     width: 28%;
     float: right;
 }
@@ -367,7 +357,6 @@ main {
 }
 
 .design-section {
-    border: 1px solid yellow;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -384,8 +373,8 @@ main {
 }
 
 .design-text {
-    border: 1px solid ghostwhite;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -394,8 +383,20 @@ main {
     margin: 40px 0;
 }
 
+.design-text p {
+    padding-top: 20px;
+}
+
 .design-text a {
     font-size: 16px;
+}
+
+#process-imgs {
+    padding-bottom: 20px;
+}
+
+#process-imgs img {
+    width: 60%;
 }
 
 /************************************************
@@ -444,7 +445,6 @@ main {
     width: 100%;
     height: auto;
 }
-
 
 /************************************************
 

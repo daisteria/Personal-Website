@@ -20,6 +20,7 @@
                 <a href="portfolio.html">Portfolio</a>
                 <ul class="dropdown-menu">
                     <li><a href="projectWebsite.html">Project: Website</a></li>
+                    <li><a href="images.html">Images</a></li>
                 </ul>
             </li>
             <li><a href="resume.html">Resume</a></li>
@@ -34,6 +35,8 @@
         <div class="design-text">
             <p>
                 This is a document of the process development of this website project.
+                <br>This project includes references from W3Schools, Google icons, and
+                other sources that are cited in its respective code areas.
             </p>
         </div>
     </div>
@@ -42,7 +45,9 @@
         <div class="design-text">
             <p>
                 A lot of my inspirations in designing this project came from my
-                current courses and likes.
+                current courses and likes. For instance, I enjoy learning about
+                astronomy and space, and so this contributed to the idea of a 
+                space themed background.
                 <br>
                 A course that I'm taking this semester (as of April 2023) is
                 CSC209, Systems Programming. This course goes in depth about 
@@ -50,7 +55,12 @@
                 computer memory. In addition to being a current computer 
                 science student, I designed the home page to demonstrate a 
                 command terminal like display.
-                <br><br>
+            </p>
+            <div class="images" id="process-imgs">
+                <img src="../images/inspirations/cmd_terminal.jpg">
+                <p>The command terminal.</p>
+            </div>
+            <p>
                 I also initially visually designed this project to mimic the
                 theme of my favourite novel, Omniscient Reader's Viewpoint,
                 which you can find 
@@ -59,21 +69,148 @@
                 book tropes, and so a lot of designs on this site feature this,
                 from the background to the website logo.
             </p>
+            <div class="images" id="process-imgs">
+                <img src="../images/inspirations/orv_kdj_yjh.jpg">
+                <p>
+                    An official art from the novel Omnisicient Reader's Viewpoint.
+                    <br> 
+                    Credits to @1L9l2Aa8UCL0IGJ on Twitter: 
+                    https://twitter.com/1L9l2Aa8UCL0IGJ.
+                    <br> 
+                    The background of this art later inspired the background
+                    of the final product.
+                </p>
+            </div>
         </div>
     </div>
     <div class="design-section">
-        <h2>[Information Architecture, Wireframes, Prototypes]</h2>
+        <h2>[Information Architecture]</h2>
+        <div class="design-text">
+            <h3>[First Information Architecture Diagram]</h3>
+            <p>
+                Given the five page specifications, I designed this documented 
+                process page to fall under the portfolio navigation link.
+                <br>
+                With respect to Brown's Principles of Information Architecture,
+                these navigation categories adhere to the principle of growth,
+                which is the practice of creating directories broad enough to
+                account for any future content growth. This allows any future
+                implementations to easily add content without restructuring the
+                entire website navigation header.
+
+            </p>
+            <div class="images" id="process-imgs">
+                <img src="../images/ia.png">
+                <p>
+                    The first four categories (Home, Portfolio, Resume, Contact)
+                    are global structural navigation links, and the Project 
+                    Website page is considered as a local structural category. 
+                </p>
+            </div>
+        </div>
+        <div class="design-section">
+            <h2>[Revised IA Diagram]</h2>
+            <div class="design-text">
+                <p>
+                    After deciding to add an images page, I changed the Information
+                    Architecture to include the Image page. This is not a major change,
+                    but crucial to understanding the final product navigation.
+    
+                </p>
+            </div>
+            <div class="images" id="process-imgs">
+                <img src="../images/revised_ia.png">
+                <p>
+                    Images category is now under Portfolio, which reflects in the final
+                    product.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="design-section">
+        <h2>[Wireframes]</h2>
         <div class="design-text">
             <p>
-                This is a document of the process development of this website project.
+                Taking elements from the research stage, several variations of pages
+                were initialized as wireframes. All of these ideas stemmed from the
+                goal of creating an astronomic like site, with elements of computer
+                science and constellations.
             </p>
+            <div class="images" id="process-imgs">
+                <a href="../documents/260_a2_wireframes.xd">Download the wireframe here</a>
+            </div>
+        </div>
+    </div>
+    <div class="design-section">
+        <h2>[Prototypes]</h2>
+        <div class="design-text">
+            <p>
+                Initially, the logo to the top left of the final product included
+                my last name. However, when implementing it in the home page, I 
+                found it to be too crowded, and so I removed the text, leaving 
+                only the logo, and determined this decision to be the better design.
+                <br>The button under the home page that was first intended to 
+                transition to the portfolio page was changed to directly link to 
+                this process page. Though the initial button idea complimented the
+                biography above, I thought that some users may miss the drop-down
+                menu under the Portfolio navigation link, which lists said 
+                process page. To avoid this, the button was changed to this design 
+                in the final product.
+                <br>Other than these slight changes, most features from the 
+                wireframes were implemented without any further modifications. 
+
+            </p>
+            <div class="images" id="process-imgs">
+                <a href="../documents/260_a2_prototypes.xd">Download the prototype here</a>
+            </div>
         </div>
     </div>
     <div class="design-section">
         <h2>[Designing Website and Other References]</h2>
         <div class="design-text">
             <p>
-                This is a document of the process development of this website project.
+                From the prototype, the website was implemented in accordance. This
+                site naturally follows from and displays the aforementioned research
+                and design processes.
+                <br>It is important to note that there are several changes made to the
+                final product that were not documented in the prototype. However, most
+                of these modifications are impartial to the overall structure of the 
+                site, and any major differences are explicitly described here. 
+                <br>
+                <br>In error, I initially implemented the website without accounting
+                for the different containers required. Each individual text and image
+                had to be padded with the same number of pixels, rather than simply 
+                padding a single container that held all the texts and photos. To add,
+                the site was explicitly formatted for a standard 1280x720px screen, but
+                outside the scope of this project, I realized that this site should be 
+                accessible regardless of screen resolution. This made the stylesheet and
+                html files unorganized and long to manage, and so this was scrapped entirely.
+                <br>
+                <br>After starting again, I took necessary containers and position
+                formatting into account. This included creating containers with borders first,
+                and adjusting their margins using percentages of the user’s screen resolution 
+                instead of pixels. 
+                <br>
+                <br>To make the background, I used ibisPaint X to draw the space
+                background and the moving starlink found in the home page. Then, I
+                used Adobe After Effects to create the movie, which can be downloaded
+                <a href="../videos/home_bg.mp4" target="_blank">here</a>.
+                <br>I also created another loop video with a different gradient
+                background, found 
+                <a href="../videos/home_bg_gradient.mp4" target="_blank">here</a>,
+                but I scrapped the video since it didn't follow my initial design plan of
+                a dark background and white text.
+            </p>
+        </div>
+    </div>
+    <div class="design-section">
+        <h2>[Accessibility]</h2>
+        <div class="design-text">
+            <p>
+                Many steps were taken to ensure that accessibility was available
+                on this website. This includes using the WAVE Evaluation tool 
+                found on the Google Chrome extension store, which shows a 8.54 contrast
+                on this site, passing the WAGC2.0 Accessibility Guidelines.
             </p>
         </div>
     </div>
