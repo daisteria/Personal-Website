@@ -362,6 +362,7 @@ main {
     align-items: center;
     flex-direction: column;
     padding: 40px;
+    border-top: 1px solid #eee;
 }
 
 .design-section h1 {
@@ -397,6 +398,17 @@ main {
 
 #process-imgs img {
     width: 60%;
+}
+
+.youtube-vid {
+    padding-top: 75px;
+}
+
+.youtube-vid p {
+    font-style: italic;
+    opacity: 80%;
+    text-align: center;
+    padding: 8px 0 20px 0;
 }
 
 /************************************************
